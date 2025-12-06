@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Agent Stack Manifesto</title>
+    <title>FullAgenticStack Manifesto</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,12 +34,12 @@
 
         /* Gradiente Dourado Solicitado */
         .text-gradient-gold {
-            background: linear-gradient(90deg, #915d00 0%, #fabe00 50%, #915d00 100%);
+            background: linear-gradient(0deg, #915d00 0%, #fabe00 50%, #915d00 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             background-size: 200% auto;
-            animation: shine 5s linear infinite;
+            /* animation: shine 5s linear infinite; */
         }
 
         @keyframes shine {
@@ -175,7 +175,7 @@
                         <div className="w-8 h-8 rounded bg-gradient-to-br from-[#915d00] to-[#fabe00] flex items-center justify-center text-[#0a1026] font-bold font-sansita">
                             FA
                         </div>
-                        <span className="font-sansita text-xl font-bold tracking-wider text-white">Full Agent Stack</span>
+                        <span className="font-sansita text-xl font-bold tracking-wider text-white">FullAgenticStack</span>
                     </div>
                     <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
                         <a href="#concept" className="hover:text-[#fabe00] transition-colors">O Conceito</a>
@@ -200,14 +200,11 @@
                         <span className="text-xs uppercase tracking-widest text-gray-400">O Futuro da Programação</span>
                     </div>
                     
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight mb-8">
-                        Não escreva código que segue ordens.<br />
-                        <span className="text-gradient-gold">Escreva código que cumpre missões.</span>
-                    </h1>
+                    <img src="./logo.png" alt="FullAgenticStack" className="w-full h-auto" />
                     
                     <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-12">
                         A era do Full Stack estático acabou. Bem-vindo ao 
-                        <strong className="text-white mx-1">Full Agent Stack</strong>: 
+                        <strong className="text-white mx-1">FullAgenticStack</strong>: 
                         Sistemas com autonomia, auto-cura e inteligência nativa em cada camada.
                     </p>
                     
@@ -250,7 +247,7 @@
                                     <IconCheckCircle className="text-[#fabe00] shrink-0" />
                                 </div>
                                 <div>
-                                    <h4 className="text-[#fabe00] font-bold text-lg">Full Agent Stack (Futuro)</h4>
+                                    <h4 className="text-[#fabe00] font-bold text-lg">FullAgenticStack (Futuro)</h4>
                                     <p className="text-sm text-gray-300">"Erro 401. Token expirado. Iniciando protocolo de renovação. Aguardando... Token renovado. Retentando operação original."</p>
                                 </div>
                             </div>
@@ -281,7 +278,7 @@
         const TheStack = () => (
             <section id="stack" className="py-32 px-6 relative">
                 <div className="max-w-4xl mx-auto text-center mb-20">
-                    <h2 className="text-4xl md:text-5xl font-sansita font-bold text-gradient-gold mb-6">
+                    <h2 className="text-4xl md:text-5xl font-sansita text-gradient-gold pb-6">
                         A Arquitetura Full Agent
                     </h2>
                     <p className="text-gray-400 text-lg">
@@ -328,7 +325,7 @@
             <section className="py-24 bg-[#050814]">
                 <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-5 gap-12">
                     <div className="lg:col-span-2 flex flex-col justify-center">
-                        <h2 className="text-4xl font-sansita font-bold text-white mb-6">
+                        <h2 className="text-4xl font-sansita text-white pb-6">
                             Código TypeScript <br/>
                             <span className="text-gradient-gold">Nativo & Resiliente</span>
                         </h2>
@@ -407,7 +404,7 @@
                 <div className="max-w-4xl mx-auto text-center">
                     <div className="mb-12">
                         <IconZap className="mx-auto text-[#fabe00] mb-6" size={48} />
-                        <h2 className="text-5xl md:text-6xl font-sansita font-black text-white mb-6">
+                        <h2 className="text-5xl md:text-6xl font-sansita text-white pb-6">
                             O Manifesto
                         </h2>
                     </div>
@@ -435,9 +432,9 @@
 
         const ManifestoPoint = ({ num, title, text }) => (
             <div className="flex gap-6 md:gap-10 border-l-2 border-white/10 pl-6 md:pl-10 hover:border-[#fabe00] transition-colors group">
-                <span className="text-3xl md:text-4xl font-sansita font-bold text-gray-700 group-hover:text-[#fabe00] transition-colors">{num}</span>
+                <span className="text-3xl md:text-4xl font-sansita text-gray-700 group-hover:text-[#fabe00] transition-colors">{num}</span>
                 <div>
-                    <h3 className="text-2xl md:text-3xl font-sansita font-bold text-white mb-3">{title}</h3>
+                    <h3 className="text-2xl md:text-3xl font-sansita text-white mb-3">{title}</h3>
                     <p className="text-lg text-gray-400">{text}</p>
                 </div>
             </div>
@@ -446,7 +443,7 @@
         const Footer = () => (
             <footer className="py-20 border-t border-white/5 bg-[#02040a]">
                 <div className="max-w-7xl mx-auto px-6 text-center">
-                    <h2 className="text-3xl font-sansita text-white mb-8">Pronto para a <span className="text-gradient-gold">Nova Geração?</span></h2>
+                      <h2 className="text-3xl font-sansita text-white pb-6">Pronto para a <span className="text-gradient-gold">Nova Geração?</span></h2>
                     
                     <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-12">
                          <button className="px-8 py-3 rounded-full bg-[#fabe00] text-[#0a1026] font-bold hover:bg-white transition-colors">
@@ -458,7 +455,7 @@
                     </div>
 
                     <p className="text-gray-600 text-sm">
-                        &copy; 2025 Full Agent Stack Initiative. Construído sobre os ombros de gigantes, para gigantes.
+                        &copy; 2025 FullAgenticStack Initiative. Construído sobre os ombros de gigantes, para gigantes.
                     </p>
                 </div>
             </footer>
