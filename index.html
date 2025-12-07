@@ -876,6 +876,61 @@ const IconSiren = ({ size = 24, className = "" }) => (
                                 </div>
                             </div>
 
+                            <div className="mt-8 p-6 bg-gradient-to-r from-green-500/10 to-green-400/10 border border-green-400/30 rounded-lg">
+                                <h4 className="text-green-200 text-xl font-bold mb-4 flex items-center gap-3">
+                                    <span className="text-green-400">🗄️</span>
+                                    Arquitetura de Dados: Por que Bancos Específicos?
+                                </h4>
+
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div className="space-y-4">
+                                        <div className="p-3 bg-green-500/5 border border-green-500/20 rounded">
+                                            <h5 className="text-green-300 font-semibold mb-2">🎯 Event Sourcing</h5>
+                                            <p className="text-green-200 text-sm">
+                                                <strong>Fonte Única da Verdade:</strong> Histórico imutável de todos os eventos.
+                                                Perfeito para auditoria, debugging e reconstrução de estado. O passado nunca muda.
+                                            </p>
+                                        </div>
+
+                                        <div className="p-3 bg-green-500/5 border border-green-500/20 rounded">
+                                            <h5 className="text-green-300 font-semibold mb-2">🔄 CQRS</h5>
+                                            <p className="text-green-200 text-sm">
+                                                <strong>Leitura Separada da Escrita:</strong> Bancos otimizados especificamente
+                                                para leitura ou escrita. Performance máxima para cada operação.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div className="space-y-4">
+                                        <div className="p-3 bg-green-500/5 border border-green-500/20 rounded">
+                                            <h5 className="text-green-300 font-semibold mb-2">🎯 Vector Database</h5>
+                                            <p className="text-green-200 text-sm">
+                                                <strong>OBRIGATÓRIO para IA:</strong> Busca semântica, similaridade e embeddings.
+                                                Sem vetores, seus agentes são cegos para o significado dos dados.
+                                            </p>
+                                        </div>
+
+                                        <div className="p-3 bg-green-500/5 border border-green-500/20 rounded">
+                                            <h5 className="text-green-300 font-semibold mb-2">🕸️ Graph Database</h5>
+                                            <p className="text-green-200 text-sm">
+                                                <strong>OBRIGATÓRIO para Relacionamentos:</strong> Descoberta de conexões complexas,
+                                                navegação por relacionamentos e queries traversal. Essencial para agentes inteligentes.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="mt-6 p-4 bg-green-400/10 border border-green-400/30 rounded">
+                                    <h5 className="text-green-200 font-bold mb-2">🏗️ Single Responsibility Principle nos Dados</h5>
+                                    <p className="text-green-100 text-sm leading-relaxed">
+                                        Cada banco de dados tem uma responsabilidade específica. Você não usa um canivete suíço
+                                        para tudo - usa a ferramenta certa para cada trabalho. Event Sourcing para histórico,
+                                        Vetor para IA, Grafo para relacionamentos, CQRS para performance. Esta é a diferença
+                                        entre um sistema "funciona" e um sistema "excepcional".
+                                    </p>
+                                </div>
+                            </div>
+
                             <div className="mt-6 p-4 bg-gradient-to-r from-green-500/15 to-green-400/15 border border-green-400/40 rounded-lg">
                                 <p className="text-green-100 text-sm">
                                     <strong>Fusão Arquitetural:</strong> O EntityDataOrchestrator combina arquitetura poliglota
